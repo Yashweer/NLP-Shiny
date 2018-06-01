@@ -26,10 +26,10 @@ shinyUI(
                                       "Proper Noun" = "PROPN",
                                       "Adverb" = "ADV",
                                       "Verb" = "VERB"),
-                       selected = c("ADJ","NOUN","PROPN")),
-    br(),
-    textInput("text", label = h3("Text input"), 
-            value = "Enter text...")
+                       selected = c("ADJ","NOUN","PROPN"))
+   # br(),
+   # textInput("text", label = h3("Text input"), 
+    #        value = "Enter text...")
     
       ),   # end of sidebar panel
     
