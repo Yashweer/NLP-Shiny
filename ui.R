@@ -39,12 +39,13 @@ shinyUI(
                   
                   tabPanel("Overview",
                            h4(p("Data input")),
-                           p("This app supports text data file also you can provide the text in text field",align="justify"),
+                           p("This app only supports text data file, kindly upload the text file for expected results.",align="justify"),
                            br(),
                            h4('How to use this App'),
                            p('To use this app, click on', 
-                             span(strong("Upload data (text or csv file)")),
-                             'and uppload the data file. This App uses udpipe package NLP workflow.')),
+                             span(strong("Upload data (text file)")),
+                             'and uppload the data file. This App uses udpipe package for NLP workflow. This app is going to generate
+                              three tabs, one with annotation, another with wordclod and third will prepare co-occurence graph')),
                  
                    tabPanel("Annotated Documents", 
                            dataTableOutput('dout1'),
